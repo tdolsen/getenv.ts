@@ -1,0 +1,32 @@
+{
+	"name": "getenv.ts",
+	"version": "1.0.0-alpha.1",
+	"description": "Get and typecast environment variables with TypeScript.",
+	"author": "Torkild Dyvik Olsen <torkild@tdolsen.net>",
+	"license": "MIT",
+	"homepage": "https://github.com/tdolsen/getenv.ts",
+	"repository": "git://github.com/tdolsen/getenv.ts.git",
+	"bugs": "https://github.com/tdolsen/getenv.ts/issues",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"clean": "del dist",
+		"compile": "tsc",
+		"test": "jest"
+	},
+	"devDependencies": {
+		"@types/jest": "^23.3.2",
+		"@types/node": "^10.9.4",
+		"del": "^3.0.0",
+		"jest": "^23.6.0",
+		"ts-jest": "^23.1.4",
+		"typescript": "^3.0.3"
+	},
+	"jest": {
+		"moduleFileExtensions": ["ts", "js"],
+		"transform": {
+			"^.+\\.tsx?$": "ts-jest"
+		},
+		"testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$"
+	}
+}

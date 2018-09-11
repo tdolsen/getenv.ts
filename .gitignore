@@ -1,0 +1,14 @@
+# Compiled
+dist/
+lib/
+
+# Package managers
+node_modules/
+npm-debug.log*
+package-lock.json
+yarn.lock
+yarn-debug.log*
+yarn-error.log*
+
+# Editors
+.vscode/
