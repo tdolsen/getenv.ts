@@ -4,9 +4,9 @@
 
 ## :warning: Alpha
 
-This is library is still in alpha stages and is still in development. The
-intention is to get the API up to par with [getenv], but a lot is still lacking.
-There might be bugs, and test coverage is not yet fully satisfactory.
+This library is still in alpha stages and is subject to change. The intention is
+to get the API up to par with [getenv], but a lot is lacking and bugs are
+probable.
 
 ### To do:
 

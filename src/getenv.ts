@@ -34,7 +34,7 @@ export function getEnvBoolean(env: string, fallback?: boolean): boolean {
 export function getEnvFloat(env: string, fallback?: number): number {
 	const envVar = toFloat(getEnvRaw(env, fallback));
 
-	if (typeof envVar !== "number") throw invalidTypeError(env, "number");
+	if (typeof envVar !== "number") throw invalidTypeError(env, "float");
 
 	return envVar;
 }
@@ -82,7 +82,11 @@ export function getEnv<T extends GetEnvReturnType = string>(env: string, fallbac
 		// Get expected return type from fallback value.
 		switch (fallbackType) {
 			case "boolean": return getEnvBoolean(env, fallback as boolean) as T;
-			case "number":  return getEnvFloat(env, fallback as number) as T;
+			case "number":
+				if (!Number.isInteger(fallback as number))
+					return getEnvFloat(env, fallback as number) as T;
+				else
+					return getEnvInteger(env, fallback as number) as T;
 			// Break to get to default behavior.
 			case "string":  break;
 
