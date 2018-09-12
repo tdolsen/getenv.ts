@@ -5,7 +5,7 @@
 	"author": "Torkild Dyvik Olsen <torkild@tdolsen.net>",
 	"license": "MIT",
 	"homepage": "https://github.com/tdolsen/getenv.ts",
-	"repository": "git://github.com/tdolsen/getenv.ts.git",
+	"repository": "git@github.com:tdolsen/getenv.ts.git",
 	"bugs": "https://github.com/tdolsen/getenv.ts/issues",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -14,19 +14,31 @@
 		"compile": "tsc",
 		"test": "jest"
 	},
+	"config": {
+		"commitizen": {
+			"path": "@commitlint/prompt"
+		}
+	},
 	"devDependencies": {
+		"@commitlint/cli": "^7.1.2",
+		"@commitlint/config-conventional": "^7.1.2",
+		"@commitlint/prompt": "^7.1.2",
+		"@semantic-release/changelog": "^3.0.0",
+		"@semantic-release/git": "^7.0.4",
+		"@semantic-release/github": "^5.0.5",
+		"@semantic-release/npm": "^5.0.4",
 		"@types/jest": "^23.3.2",
 		"@types/node": "^10.9.4",
+		"commitizen": "^2.10.1",
 		"del": "^3.0.0",
+		"husky": "^0.14.3",
 		"jest": "^23.6.0",
+		"lint-staged": "^7.2.2",
+		"pkg-ok": "^2.2.0",
+		"prettier": "^1.14.2",
+		"semantic-release": "^15.9.15",
+		"travis-deploy-once": "^5.0.7",
 		"ts-jest": "^23.1.4",
 		"typescript": "^3.0.3"
-	},
-	"jest": {
-		"moduleFileExtensions": ["ts", "js"],
-		"transform": {
-			"^.+\\.tsx?$": "ts-jest"
-		},
-		"testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$"
 	}
 }
