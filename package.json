@@ -11,8 +11,14 @@
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"clean": "del dist",
+		"test": "jest",
+		"lint": "prettier --write",
 		"compile": "tsc",
-		"test": "jest"
+		"build": "yarn clean && yarn compile",
+		"commit": "git-cz",
+		"commit:retry": "git-cz --retry",
+		"prerelease": "pkg-ok",
+		"release": "semantic-release"
 	},
 	"config": {
 		"commitizen": {

@@ -16,10 +16,9 @@ test:
 build:
   stage: build
   script:
-    - yarn clean
-    - yarn compile
+    - yarn build
 
 release:
   stage: release
   script:
-    - yarn run semantic-release
+    - yarn release

@@ -1,0 +1,9 @@
+{
+	"linters": {
+		"*.{ts,tsx}": ["yarn run lint:format:fix", "git add"],
+		"*.json": ["yarn run lint:format:fix", "git add"]
+	},
+	"ignore": [
+		"**/dist/**"
+	]
+}
