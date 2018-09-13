@@ -1,6 +1,6 @@
-# getenv
+# getenv.ts
 
-> Helper to get and typecast environment variables with TypeScript typing.
+> Helper to get and typecast environment variables with TypeScript.
 
 ## :warning: Alpha
 
@@ -16,8 +16,9 @@ probable.
 * [ ] `.url`
 * [ ] `.(enable/disable)Fallbacks`
 * [ ] `.(enable/disable)Errors`
+* [ ] Full devops
 * [ ] Full test coverage
-* [ ] Documentation
+* [ ] Full documentation
 * [ ] [vue-cli] compatability
 
 ## Installation
