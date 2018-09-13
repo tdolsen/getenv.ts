@@ -2,12 +2,15 @@
 export type GetEnvReturnType = string | boolean | number;
 
 // Signature for getting environment variable cast to type `T`.
-export type GetEnvFunction<T extends GetEnvReturnType>
-	= (env: string, fallback?: T) => T;
+export type GetEnvFunction<T extends GetEnvReturnType> = (
+	env: string,
+	fallback?: T
+) => T;
 
 // Signature for conversion functions.
-export type GetEnvConversionFunction<T extends GetEnvReturnType>
-	= (value?: string) => T | undefined;
+export type GetEnvConversionFunction<T extends GetEnvReturnType> = (
+	value?: string
+) => T | undefined;
 
 // Interface for module, having main function and type casting functions.
 export interface GetEnvInterface {

@@ -74,25 +74,31 @@ export function getEnvString(env: string, fallback?: string): string {
  *                 `fallback` value was provided.
  * @returns        Returns the value of the `env` variable or `fallback`.
  */
-export function getEnv<T extends GetEnvReturnType = string>(env: string, fallback?: T): T {
+export function getEnv<T extends GetEnvReturnType = string>(
+	env: string,
+	fallback?: T
+): T {
 	// Get type from fallback if defined.
 	if (fallback !== undefined) {
 		const fallbackType = typeof fallback;
 
 		// Get expected return type from fallback value.
 		switch (fallbackType) {
-			case "boolean": return getEnvBoolean(env, fallback as boolean) as T;
+			case "boolean":
+				return getEnvBoolean(env, fallback as boolean) as T;
 			case "number":
 				if (!Number.isInteger(fallback as number))
 					return getEnvFloat(env, fallback as number) as T;
-				else
-					return getEnvInteger(env, fallback as number) as T;
+				else return getEnvInteger(env, fallback as number) as T;
 			// Break to get to default behavior.
-			case "string":  break;
+			case "string":
+				break;
 
 			// Throw error if fallback is of unsupported type.
 			default:
-				throw new Error(`Conversion type "${fallbackType}" is not supported for conversion of environment variables.`);
+				throw new Error(
+					`Conversion type "${fallbackType}" is not supported for conversion of environment variables.`
+				);
 		}
 	}
 

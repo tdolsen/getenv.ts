@@ -4,7 +4,7 @@ import {
 	getEnvBoolean,
 	getEnvFloat,
 	getEnvInteger,
-	getEnvString
+	getEnvString,
 } from "./getenv";
 
 // Remap to exported name.

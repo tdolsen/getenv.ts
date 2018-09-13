@@ -33,7 +33,9 @@ describe("getenv", () => {
 	});
 
 	test("should throw an error if fallback is not a supported type", () => {
-		expect(() => getenv("STRING", (() => true) as any)).toThrow(/is not supported for conversion/);
+		expect(() => getenv("STRING", (() => true) as any)).toThrow(
+			/is not supported for conversion/
+		);
 	});
 
 	test("should throw an error if variable not found", () => {
