@@ -2,7 +2,6 @@ image: node:latest
 
 stages:
   - test
-  - build
   - release
 
 before_script:
@@ -13,12 +12,8 @@ test:
   script:
     - yarn test
 
-build:
-  stage: build
-  script:
-    - yarn build
-
-release:
+publish:
   stage: release
   script:
+    - yarn build
     - yarn release
