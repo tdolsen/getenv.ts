@@ -4,9 +4,9 @@
 	"description": "Get and typecast environment variables with TypeScript.",
 	"author": "Torkild Dyvik Olsen <torkild@tdolsen.net>",
 	"license": "MIT",
-	"homepage": "https://github.com/tdolsen/getenv.ts",
-	"repository": "git@github.com:tdolsen/getenv.ts.git",
-	"bugs": "https://github.com/tdolsen/getenv.ts/issues",
+	"homepage": "https://gitlab.com/tdolsen/getenv.ts",
+	"repository": "git@gitlab.com:tdolsen/getenv.ts.git",
+	"bugs": "https://gitlab.com/tdolsen/getenv.ts/issues",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"scripts": {
