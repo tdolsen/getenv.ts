@@ -1,0 +1,25 @@
+image: node:latest
+
+stages:
+  - test
+  - build
+  - release
+
+before_script:
+  - yarn
+
+test:
+  stage: test
+  script:
+    - yarn test
+
+build:
+  stage: build
+  script:
+    - yarn clean
+    - yarn compile
+
+release:
+  stage: release
+  script:
+    - yarn run semantic-release
