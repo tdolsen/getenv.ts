@@ -1,7 +1,7 @@
 {
 	"name": "getenv.ts",
 	"version": "1.0.0",
-	"description": "Get and typecast environment variables with TypeScript.",
+	"description": "Get and typecast environment variables with TypeScript",
 	"author": "Torkild Dyvik Olsen <torkild@tdolsen.net>",
 	"license": "MIT",
 	"homepage": "https://gitlab.com/tdolsen/getenv.ts",
