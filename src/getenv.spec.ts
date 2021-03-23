@@ -9,6 +9,7 @@ beforeAll(() => {
 beforeEach(() => {
 	process.env = {
 		FALSE: "false",
+		TRUE: "True",
 		FLOAT: "1.1",
 		INT: "1",
 		STRING: "foo",
@@ -22,6 +23,7 @@ afterAll(() => {
 describe("getenv", () => {
 	test("given no fallback, should return the string value of variable", () => {
 		expect(getenv("FALSE")).toBe("false");
+		expect(getenv("TRUE")).toBe("True");
 		expect(getenv("FLOAT")).toBe("1.1");
 		expect(getenv("INT")).toBe("1");
 		expect(getenv("STRING")).toBe("foo");
@@ -52,6 +54,7 @@ describe("getenv", () => {
 describe("getenv.bool", () => {
 	test("should return the boolean value of variable", () => {
 		expect(getenv.bool("FALSE")).toBe(false);
+		expect(getenv.bool("TRUE")).toBe(true);
 	});
 
 	test("should throw error if value is not a boolean", () => {
