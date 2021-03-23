@@ -1,3 +1,6 @@
+export * from "./types";
+export * from "./getenv";
+
 import { GetEnvInterface } from "./types";
 import {
 	getEnv,

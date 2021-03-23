@@ -1,11 +1,12 @@
 export function toBoolean(value?: any) {
+	if (typeof value === "string") value = value.toLowerCase();
 	return typeof value === "boolean"
 		? value
 		: value === "true"
-			? true
-			: value === "false"
-				? false
-				: undefined;
+		? true
+		: value === "false"
+		? false
+		: undefined;
 }
 
 export function toFloat(value?: any) {
