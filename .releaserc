@@ -9,14 +9,14 @@
 	"prepare": [
 		"@semantic-release/changelog",
 		"@semantic-release/npm",
-		{
-			"path": "@semantic-release/git",
+		["@semantic-release/git", {
 			"assets": [
 				"README.md",
 				"CHANGELOG.md",
 				"package.json",
 				"yarn.lock"
 			]
+		}]
 		}
 	],
 
