@@ -4,17 +4,16 @@ stages:
   - test
   - release
 
+before_script:
+  - yarn
 
 test:
   stage: test
-  before_script:
-    - yarn
   script:
     - yarn test
 
 publish:
   stage: release
-  # Don't need yarn install here, as prerelease takes care of that.
   script:
     - yarn build
     - yarn release
