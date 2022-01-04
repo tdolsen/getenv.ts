@@ -6,7 +6,7 @@
 ## Installation
 
 ```sh
-yarn add getenv.ts
+pnpm add getenv.ts
 # or
 npm install getenv.ts
 ```
@@ -48,16 +48,16 @@ const sudoUser = getenv.string("SUDO_USER", "root");
 
 // Throws `ReferenceError` when variable isn't defined.
 try {
-  const invalid = getenv.string("DOES_NOT_EXIST");
+	const invalid = getenv.string("DOES_NOT_EXIST");
 } catch (error) {
-  // Will throw...
+	// Will throw...
 }
 
 // Throws `TypeError` when variable isn't of the expected type.
 try {
-  const invalid = getenv.int("HTTP_HOST");
+	const invalid = getenv.int("HTTP_HOST");
 } catch (error) {
-  // Will throw...
+	// Will throw...
 }
 ```
 

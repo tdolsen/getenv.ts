@@ -1,4 +1,4 @@
 {
-	"*.{ts,tsx}": "yarn format",
-	"*.json": "yarn format",
+	"*.{ts,tsx}": "pnpm format",
+	"*.json": "pnpm format",
 }

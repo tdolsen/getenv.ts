@@ -5,15 +5,16 @@ stages:
   - release
 
 before_script:
-  - yarn
+  - npm install -g pnpm
+  - pnpm install
 
 test:
   stage: test
   script:
-    - yarn test
+    - pnpm test
 
 publish:
   stage: release
   script:
-    - yarn build
-    - yarn release
+    - pnpm build
+    - pnpm release
