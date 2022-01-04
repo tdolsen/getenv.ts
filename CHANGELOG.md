@@ -1,3 +1,10 @@
+# [1.3.0](https://gitlab.com/tdolsen/getenv.ts/compare/v1.2.0...v1.3.0) (2022-01-04)
+
+
+### Features
+
+* updates dependencies and changes to use pnpm ([e88c28b](https://gitlab.com/tdolsen/getenv.ts/commit/e88c28ba5daf792881b9cad2ad1541766cee0821))
+
 # [1.2.0](https://gitlab.com/tdolsen/getenv.ts/compare/v1.1.0...v1.2.0) (2021-03-23)
 
 
