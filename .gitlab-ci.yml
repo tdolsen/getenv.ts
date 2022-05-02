@@ -11,10 +11,9 @@ before_script:
 test:
   stage: test
   script:
-    - pnpm test
+    - pnpm run test
 
 publish:
   stage: release
   script:
-    - pnpm build
-    - pnpm release
+    - pnpm run release

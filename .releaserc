@@ -1,4 +1,7 @@
 {
+	"branches": [
+		"main"
+	],
 	"verifyConditions": [
 		"@semantic-release/changelog",
 		"@semantic-release/npm",
