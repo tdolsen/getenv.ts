@@ -1,3 +1,15 @@
+# [1.4.0](https://gitlab.com/tdolsen/getenv.ts/compare/v1.3.0...v1.4.0) (2022-05-02)
+
+
+### Bug Fixes
+
+* sets branches in semantic-release config ([d0425b3](https://gitlab.com/tdolsen/getenv.ts/commit/d0425b30636a41533bff7ca4dbb619b8be525333))
+
+
+### Features
+
+* removes allow-only-pnpm preinstall check, and updates dependencies ([a7b3339](https://gitlab.com/tdolsen/getenv.ts/commit/a7b33393bf762b8989ba6fde64d1babf03de795d))
+
 # [1.3.0](https://gitlab.com/tdolsen/getenv.ts/compare/v1.2.0...v1.3.0) (2022-01-04)
 
 
